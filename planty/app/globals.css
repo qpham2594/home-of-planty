@@ -1,0 +1,30 @@
+:root {
+  --background-color: white; /* Define the background color variable */
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+}
+
+/* Set background color for body */
+body {
+  background-color: var(--background-color);
+  max-width: 100vw;
+  overflow-x: hidden;
+  color: green; /* Set text color */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Optional: Set color scheme for dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: black; /* Change background color for dark mode */
+  }
+  
+  html {
+    color-scheme: dark;
+  }
+}
