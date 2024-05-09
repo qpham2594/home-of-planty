@@ -3,10 +3,10 @@ import styles from "@/app/page.module.css";
 import Header from "@/app/components/header";
 import { plantDetails } from "@/app/api/search-page/route";
 
-export async function detailsPage({params: {id}}) {
+export async function detailsPage({ params: { id } }) {
   try {
     const data = await plantDetails(id);
-    console.log(data)
+    console.log(data);
     return {
       props: {
         data
@@ -32,7 +32,7 @@ export default function Search({ data }) {
           {data && (
             <>
               <Image src={data.default_image.regular_url} alt="Plant Image" width={300} height={300} />
-              <p>Common Name: {data.common_name}</p>
+              <p key={data.id}>Common Name: {data.common_name}</p>
               <p>Cycle: {data.cycle}</p>
               <p>Watering: {data.watering}</p>
               <p>Sunlight: {data.sunlight}</p>
@@ -45,3 +45,4 @@ export default function Search({ data }) {
     </div>
   );
 }
+
