@@ -5,13 +5,21 @@
 
 import React from 'react';
 import Head from 'next/head';
+import Header from '../components/header';
 import SearchComponent from '../components/search-button';
+import Footer from '../components/footer';
+import Breadcrumbs from "../components/breadcrumbs";
 
 export default function PlantSearchPage() {
   return (
     <div>
-      <Head/>
-      <SearchComponent/>
+      <main>
+        <Head/>
+        <Header/>
+        <Breadcrumbs/>
+        <SearchComponent/>
+      </main>
+      <Footer/>
     </div>
   );
 }
