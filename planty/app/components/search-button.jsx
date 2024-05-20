@@ -29,8 +29,8 @@ export default function SearchComponent() {
     <div>
       <Head/>
       <h1>Plant Search</h1>
-
-      <div className="relative">
+  
+      <div className="relative flex items-center px-4">
         <label htmlFor="Search" className="sr-only"> Search </label>
         <input
           type="text"
@@ -38,12 +38,12 @@ export default function SearchComponent() {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Enter plant name or keyword"
-          className="w-full rounded-md border-gray-200 py-2.5 pe-10 shadow-sm sm:text-sm"
+          className="w-full rounded-md border-gray-200 py-2.5 pe-10 shadow-sm sm:text-sm px-4"
         />
-        <span className="absolute inset-y-0 end-0 grid w-10 place-content-center">
+        <span className="relative inset-y-0 end-0 grid w-10 place-content-center">
           <button type="button" onClick={handleSearch} className="text-gray-600 hover:text-gray-700">
             <span className="sr-only">Search</span>
-
+  
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -65,33 +65,25 @@ export default function SearchComponent() {
       {searchResult.length > 0 && (
         <div>
           <h2>Search Results</h2>
-          <ul>
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-8 p-4">
             {searchResult.map(plant => (
-              <li key={plant.id}>
+              <div key={plant.id} className="h-70 rounded-lg bg-gray-200 p-4">
                 <Link href={`/search-page/${plant.id}`}>
-                    {plant.default_image && plant.default_image.thumbnail && (
-                      <img src={plant.default_image.thumbnail} alt={plant.common_name} />
-                    )}
-                    <div>
-                      <strong>Common Name:</strong> {plant.common_name}
-                      <ul>
-                        <li><strong>Scientific Name:</strong> {plant.scientific_name.join(', ')}</li>
-                      </ul>
-                    </div>                  
+                  {plant.default_image && plant.default_image.thumbnail && (
+                    <img src={plant.default_image.thumbnail} alt={plant.common_name} />
+                  )}
+                  <div>
+                    <strong>Common Name:</strong> {plant.common_name}
+                    <ul>
+                      <li><strong>Scientific Name:</strong> {plant.scientific_name.join(', ')}</li>
+                    </ul>
+                  </div>                  
                 </Link>
-              </li>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
       )}
     </div>
   );
-}
-
-
-{/*
-  Heads up! 👋
-
-  Plugins:
-    - @tailwindcss/forms
-*/}
+}  

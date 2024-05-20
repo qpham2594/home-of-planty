@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Breadcrumbs() {
   return (
-    <nav aria-label="Breadcrumb" className="flex">
+    <nav aria-label="Breadcrumb" className="flex justify-center mt-4 ">
       <ol className="flex overflow-hidden rounded-lg border border-gray-200 text-gray-600">
         <li className="flex items-center">
           <a
