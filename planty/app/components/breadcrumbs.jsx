@@ -8,7 +8,7 @@ export default function Breadcrumbs() {
       <ol className="flex overflow-hidden rounded-lg border border-gray-200 text-gray-600">
         <li className="flex items-center">
           <a
-            href="#"
+            href="/"
             className="flex h-10 items-center gap-1.5 bg-gray-100 px-4 transition hover:text-gray-900"
           >
             <svg
@@ -37,7 +37,7 @@ export default function Breadcrumbs() {
           </span>
 
           <a
-            href="#"
+            href="/search-page"
             className="flex h-10 items-center bg-white pe-4 ps-8 text-xs font-medium transition hover:text-gray-900"
           >
             Find Your Plant

@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
+  padding-top: 0rem;
   min-height: 100vh;
 }
 
@@ -108,6 +109,19 @@
 .logo {
   position: relative;
 }
+
+.searchTitle{
+  font-weight: semi-bold;
+  font-size: 20px;
+  margin: 20px;
+  color: white;
+}
+
+.bannerphoto{
+  padding:0rem;
+  height: 350px;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {

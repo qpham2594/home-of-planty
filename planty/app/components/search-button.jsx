@@ -8,6 +8,8 @@ import React, { useState } from 'react';
 import { plantSpecies } from '../api/search-page/route';
 import Head from 'next/head';
 import Link from 'next/link';
+import styles from "../page.module.css";
+
 
 export default function SearchComponent() {
   const [query, setQuery] = useState('');
@@ -28,7 +30,7 @@ export default function SearchComponent() {
   return (
     <div>
       <Head/>
-      <h1>Plant Search</h1>
+      <h1 className={styles.searchTitle}>Plant Search</h1>
   
       <div className="relative flex items-center px-4">
         <label htmlFor="Search" className="sr-only"> Search </label>
@@ -38,10 +40,10 @@ export default function SearchComponent() {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Enter plant name or keyword"
-          className="w-full rounded-md border-gray-200 py-2.5 pe-10 shadow-sm sm:text-sm px-4"
+          className="w-full rounded-md border-white-100 py-2.5 pe-10 shadow-sm sm:text-sm px-4 text-black bg-white"
         />
         <span className="relative inset-y-0 end-0 grid w-10 place-content-center">
-          <button type="button" onClick={handleSearch} className="text-gray-600 hover:text-gray-700">
+          <button type="button" onClick={handleSearch} className="text-white-100 hover:text-gray-700">
             <span className="sr-only">Search</span>
   
             <svg
@@ -50,7 +52,7 @@ export default function SearchComponent() {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="h-4 w-4"
+              className="h-5 w-5 text-white"
             >
               <path
                 strokeLinecap="round"
@@ -64,7 +66,7 @@ export default function SearchComponent() {
       {error && <p>{error}</p>}
       {searchResult.length > 0 && (
         <div>
-          <h2>Search Results</h2>
+          <h2 className={styles.searchTitle}>Search Results</h2>
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-8 p-4">
             {searchResult.map(plant => (
               <div key={plant.id} className="h-70 rounded-lg bg-gray-200 p-4">
