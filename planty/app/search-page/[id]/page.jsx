@@ -23,26 +23,26 @@ export default async function PlantDetailsPage({ params }) {
     <div>
       <Header />
       <main className={styles.main}>
-        <div>
-          <h1>{data.common_name}</h1> <br/>
+        <div className="text-white flex flex-col justify-center items-center h-screen ">
+          <h1 className={styles.searchTitle}>{data.common_name}</h1> <br/>
           {data && (
             <>
               <Image src={data.default_image.regular_url} alt="Plant Image" width={300} height={300} /> <br/>
-              <div className="flow-root rounded-lg border border-gray-100 py-3 shadow-sm">
-                <dl className="-my-3 divide-y divide-gray-100 text-sm">
-                  <div className="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
+              <div className="flow-root rounded-lg border border-gray-200 py-5 shadow-sm bg-green-900">
+                <dl className="-my-3 divide-y divide-white text-sm">
+                  <div className="grid grid-cols-1 gap-1 p-5 sm:grid-cols-1 sm:gap-4">
                     <p key={data.id}>Common Name: {data.common_name}</p>
                   </div>
-                  <div className="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
+                  <div className="grid grid-cols-1 gap-1 p-5 sm:grid-cols-1 sm:gap-4">
                     <p>Cycle: {data.cycle}</p>
                   </div>
-                  <div className="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
+                  <div className="grid grid-cols-1 gap-1 p-5 sm:grid-cols-1 sm:gap-4">
                     <p>Watering: {data.watering}</p>
                   </div>
-                  <div className="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
+                  <div className="grid grid-cols-1 gap-1 p-5 sm:grid-cols-1 sm:gap-4">
                     <p>Sunlight: {data.sunlight}</p>
                   </div>
-                  <div className="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
+                  <div className="grid grid-cols-1 gap-1 p-5 sm:grid-cols-1 sm:gap-4">
                     <p>Description: {data.description}</p>   
                   </div>
                 </dl>
