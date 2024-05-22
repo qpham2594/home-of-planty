@@ -22,12 +22,12 @@ export default async function PlantDetailsPage({ params }) {
   return (
     <div>
       <Header />
-      <main className={styles.main}>
+      <main className={styles.main + " mt-20 "}>
         <div className="text-white flex flex-col justify-center items-center h-screen ">
           <h1 className={styles.searchTitle}>{data.common_name}</h1> <br/>
           {data && (
             <>
-              <Image src={data.default_image.regular_url} alt="Plant Image" width={300} height={300} /> <br/>
+              <Image src={data.default_image.regular_url} alt="Plant Image" width={300} height={300} className="w-36 sm:w-36 border-2 border-white" /> <br/>
               <div className="flow-root rounded-lg border border-gray-200 py-5 shadow-sm bg-green-900">
                 <dl className="-my-3 divide-y divide-white text-sm">
                   <div className="grid grid-cols-1 gap-1 p-5 sm:grid-cols-1 sm:gap-4">
