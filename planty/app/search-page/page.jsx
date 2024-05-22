@@ -21,10 +21,10 @@ export default function PlantSearchPage() {
         <section className="text-gray-600 body-font py-16 rounded-xl overflow-hidden">
         <div className="container mx-auto flex md:px-10 md:py-10 md:flex lg:flex-row flex-col items-center bg-blue-800 p-2">
             <div className="lg:flex-grow md:w-3/4 lg:pr-24 md:pr-10 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h1 className="text-lg sm:text-4xl md:text-4xl font-bold leading-9 tracking-tight mb-1 text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-5xl md:leading-normal font-serif md:w-full">
+              <h1 className="text-lg sm:text-4xl md:text-4xl font-bold leading-9 tracking-tight mb-1 text-gray-900 dark:text-white sm:text-3xl sm:leading-10 md:text-5xl md:leading-normal font-serif md:w-full">
                 Search for a plant, Look for it, Learn about it!
               </h1>
-              <p className="mb-4 md:pl-0 pl-2 pr-2 leading-relaxed dark:text-gray-300 text-lg">
+              <p className="mb-4 md:pl-0 pl-2 pr-2 leading-relaxed dark:text-white text-lg">
                 We hope that by researching for a plant that you are interested in, it will inpsire you to explore nature more, and add more greenery in your house, whether it's indoor or outdoor. <br/> <br/>
 
                 As our planet is experiencing the consequences of our own doings and the policies around the world, we believe that we can do something to prevent it from getting worse, and as a result,
