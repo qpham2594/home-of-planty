@@ -7,7 +7,7 @@ export default function Footer() {
                 <div className="flex justify-center text-teal-600">
                     {/* Add any footer content here */}
                 </div>
-                <p className="mt-2 text-center text-sm text-black-500">
+                <p className="mt-2 text-center text-sm text-white">
                     Copyright &copy; 2024. For educational purposes only.
                 </p>
             </div>

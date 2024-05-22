@@ -9,7 +9,7 @@ export default function Header() {
                     <img src='/fav-32.png' alt="Logo" />
                 </Link>
                 <div className="flex flex-1 items-center justify-end md:justify-between">
-                <nav aria-label="Global" className="hidden md:block">
+                <nav aria-label="Global">
                     <ul className="flex items-center gap-6 text-md">
                         <Link href="/" className="text-orange-500 transition hover:text-white duration-300"> Home </Link>
                         <Link href="/search-page" className="text-orange-500 transition hover:text-white duration-300"> Find Your Plant </Link>
