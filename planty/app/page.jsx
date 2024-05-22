@@ -11,13 +11,13 @@ export default function Home() {
     <div className="lg:max-w-lg lg:w-full mb-5 md:mb-0 w-full flex justify-center">
       <img className="object-cover object-center rounded w-full md:w-2/3" alt="hero" src="/planty-256-flag.png"/>
     </div>
-    <section className="text-gray-600 body-font bg-white dark:bg-slate-800 rounded-xl overflow-hidden">
+    <section className="text-gray-600 body-font bg-white rounded-xl overflow-hidden">
               <div className="container mx-auto flex md:px-10 md:py-10 md:flex lg:flex-row flex-col items-center bg-blue-800 p-2">
                 <div className="lg:flex-grow md:w-3/4 lg:pr-20 md:pr-10 flex flex-col md:items-start md:text-left mb-16 md:mb-10 items-center text-center">
-                  <h1 className="text-lg sm:text-4xl md:text-4xl font-bold leading-9 tracking-tight mb-1 text-gray-900 dark:text-white sm:text-3xl sm:leading-10 md:text-5xl md:leading-normal font-serif md:w-full">
+                  <h1 className="text-lg sm:text-4xl md:text-4xl font-bold leading-9 tracking-tight mb-1 text-gray-900 text-white sm:text-3xl sm:leading-10 md:text-5xl md:leading-normal font-serif md:w-full">
                     This planet, too, can also be a green flag
                   </h1>
-                  <p className="mb-4 md:pl-0 pl-2 pr-2 leading-relaxed dark:text-white text-lg md:text-lg sm:text-md">
+                  <p className="mb-4 md:pl-0 pl-2 pr-2 leading-relaxed text-white text-lg md:text-lg sm:text-md">
                     Ever saw a plant on your walk or at Lowe's or Home Depot and wondering what kind of plant it is? <br/>
                     Or maybe you want to add some more greenery back into this world? <br/>
                     You can find your plant here and check out all that information so that you can have a green thumb (or two green thumbs)!
